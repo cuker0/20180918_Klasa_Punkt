@@ -11,10 +11,13 @@ namespace _20180918_Klasa_Punkt
         public double X { get; private set; }
         public double Y { get; private set; }
 
+        public static int Licznik { get; private set;}
+
         public Point(double x, double y)
         {
             X = x;
             Y = y;
+            Licznik++;
         }
 
         public static Point operator +(Point p1, Point p2)

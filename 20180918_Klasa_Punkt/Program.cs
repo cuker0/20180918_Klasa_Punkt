@@ -21,6 +21,13 @@ namespace _20180918_Klasa_Punkt
             pt4.show();
             pt5.show();
 
+            for (int i = 0; i < 5; i++)
+            {
+                Point pt = new Point(i,i);               
+            }
+
+            Console.WriteLine(Point.Licznik);
+
             pt1.MoveDown(5.5);
             pt1.show();
             pt1.MoveUp(43.2);
