@@ -8,10 +8,17 @@ namespace _20180918_Klasa_Punkt
 {
     class Point
     {
+        protected string _name;
+
         public double X { get; private set; }
         public double Y { get; private set; }
 
         public static int Licznik { get; private set;}
+
+        public void SetName (string name)
+        {
+            _name = name;
+        }
 
         public Point(double x, double y)
         {
@@ -61,11 +68,14 @@ namespace _20180918_Klasa_Punkt
             Y = Y - value;
         }
 
-
-        public void show()
+        public override string ToString()
         {
-            Console.WriteLine("Wspolrzedne X:{0} Y:{1}", X, Y);
-            Console.ReadKey();
+            return $"X: {X}, Y: {Y}";   //$ znak formatowania
+        }
+
+        public virtual void Show()
+        {
+            Console.Write($"Wspolrzedne X:{X} Y:{Y} ");
         }
         
       

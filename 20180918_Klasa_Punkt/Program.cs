@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _20180918_Klasa_Punkt
 {
@@ -15,28 +11,23 @@ namespace _20180918_Klasa_Punkt
             Point pt3 = pt1 + pt2;
             Point pt4 = pt1 - pt2;
             Point pt5 = pt4 * 5;
-            pt1.show();
-            pt2.show();
-            pt3.show();
-            pt4.show();
-            pt5.show();
 
-            for (int i = 0; i < 5; i++)
-            {
-                Point pt = new Point(i,i);               
-            }
+            //pt2.Show();
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Point pt = new Point(i,i);               
+            //}
 
-            Console.WriteLine(Point.Licznik);
+            //Console.WriteLine(Point.Licznik);
+                        
 
-            pt1.MoveDown(5.5);
-            pt1.show();
-            pt1.MoveUp(43.2);
-            pt1.show();
-            pt1.MoveLeft(-99.94);
-            pt1.show();
-            pt1.MoveRight(44.32);
-            pt1.show();
-            
+            Point3d XYZ = new Point3d(1, 2, 3);
+
+            Point punkt = XYZ;
+            punkt.Show();
+            Console.WriteLine(punkt);
+            Console.ReadKey();
+         
         }
     }
 }
